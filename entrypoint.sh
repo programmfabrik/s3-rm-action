@@ -41,7 +41,6 @@ EOF
 # All other flags are optional via the `args:` directive.
 sh -c "aws s3 rm ${SOURCE_DIR:-.} s3://${AWS_S3_BUCKET}/${DEST_DIR} \
               --profile s3-rm-action \
-              --no-progress \
               ${ENDPOINT_APPEND} $*"
 
 # Clear out credentials after we're done.
