@@ -1,4 +1,4 @@
-# GitHub Action to delete files from S3 Bucket 🔄
+# GitHub Action to delete files from S3 Bucket
 
 Fork of [s3-sync-action](https://github.com/jakejarvis/s3-sync-action).
 
@@ -10,7 +10,7 @@ This simple action uses the [vanilla AWS CLI](https://docs.aws.amazon.com/cli/in
 
 Place in a `.yml` file such as this one in your `.github/workflows` folder. [Refer to the documentation on workflow YAML syntax here.](https://help.github.com/en/articles/workflow-syntax-for-github-actions)
 
-All [`aws s3 sync` flags](https://docs.aws.amazon.com/cli/latest/reference/s3/rm.html) are optional to allow for maximum customizability (that's a word, I promise) and must be provided by you via `args:`.
+All [`aws s3 rm flags`](https://docs.aws.amazon.com/cli/latest/reference/s3/rm.html) are optional to allow for maximum customizability (that's a word, I promise) and must be provided by you via `args:`.
 
 #### The following example includes a parameter to delete all files inside a folder:
 
