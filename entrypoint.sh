@@ -39,7 +39,7 @@ EOF
 
 # Sync using our dedicated profile and suppress verbose messages.
 # All other flags are optional via the `args:` directive.
-sh -c "aws s3 rm s3://${AWS_S3_BUCKET}/${PATH_TO_DELETE}/ \
+sh -c "aws s3 rm s3://${AWS_S3_BUCKET}/${PATH_TO_DELETE} \
               --profile s3-rm-action \
               ${ENDPOINT_APPEND} $*"
 
